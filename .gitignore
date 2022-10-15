@@ -1,0 +1,5 @@
+node_modules
+.vscode
+config/config.ts
+cypress/screenshots
+cypress/videos
