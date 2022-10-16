@@ -1,5 +1,5 @@
 import { TiddlyInsides } from "./TiddlyInsides";
-import { TWUI } from "./TWUI";
+import { TiddlyUI } from "./TiddlyUI";
 
 export const Fixtures = {
     loadTiddler(name: string, path: string, open: boolean = true) {
@@ -31,13 +31,13 @@ export const Fixtures = {
             cy.wrap(fields.title).as(name);
 
             if (open) {
-                TWUI.openTiddlerByName(fields.title);
+                TiddlyUI.openTiddlerByName(fields.title);
             }
         });
     },
     withinTiddler(fixtureName: string, callback: () => void) {
         cy.get(`@${fixtureName}`).then((name: any) => {
-            TWUI.withinTiddler(name, callback);
+            TiddlyUI.withinTiddler(name, callback);
         })
     }
 }

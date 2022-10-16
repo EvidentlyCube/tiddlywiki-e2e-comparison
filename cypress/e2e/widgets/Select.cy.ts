@@ -1,9 +1,9 @@
 import { Fixtures } from "../../helpers/Fixtures";
-import { TWUI } from "../../helpers/TWUI";
+import { TiddlyUI } from "../../helpers/TiddlyUI";
 
 describe('Select widget', () => {
   beforeEach(() => {
-    TWUI.init();
+    TiddlyUI.init();
   })
 
   it('Select updates field when changing option', () => {
