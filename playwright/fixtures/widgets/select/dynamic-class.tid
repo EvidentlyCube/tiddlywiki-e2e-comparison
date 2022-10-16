@@ -1,0 +1,10 @@
+title: Select with dynamic class
+type: text/vnd-tiddlywiki
+
+<$select class={{!!cls}} field="cls" default="">
+    <option value="">Nothing</option>
+    <option value="cls-1">Option 1</option>
+    <option value="cls-2">Option 2</option>
+</$select>
+
+<p class="field-value">{{!!cls}}</p>
